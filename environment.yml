@@ -1,0 +1,15 @@
+name: MovieLens-RecSys
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - black
+  - flake8
+  - isort
+  - pip
+  - typer
+  - loguru
+  - tqdm
+  - pip:
+    - python-dotenv
+    - -e .
