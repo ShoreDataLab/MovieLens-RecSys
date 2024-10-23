@@ -1,59 +1,44 @@
 # MovieLens Recommendation System
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## Description
+This repository contains the code for a movie recommendation system built using the MovieLens 32M dataset. The system uses a hybrid approach that combines collaborative filtering, content-based filtering, and graph-based recommendations.
 
-This project showcases the development of a sophisticated recommendation system for a media streaming platform, inspired by Netflix, using the MovieLens 1B Synthetic Dataset. The system employs a hybrid approach, integrating collaborative filtering, content-based filtering, and graph-based recommendations to deliver personalised movie suggestions.
+## Data Source
+The MovieLens 32M dataset can be downloaded from:
+https://grouplens.org/datasets/movielens/32m/
 
-## Project Organisation
+## Getting Started
 
-```
-├── LICENSE     <- Open-source license if one is chosen
-│
-├── Makefile    <- Makefile with convenience commands like `make data` or `make train`
-│
-├── README.md   <- The top-level README for developers using this project.
-│
-├── data
-│   │
-│   ├── external    <- Data from third party sources.
-│   │
-│   ├── interim     <- Intermediate data that has been transformed.
-│   │
-│   ├── processed   <- The final, canonical data sets for modeling.
-│   │
-│   └── raw         <- The original, immutable data dump.
-│
-├── environment.yml <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── models          <- Trained and serialsed models, model predictions, or model summaries
-│
-├── notebooks       <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-└── src     <- Source code for use in this project.
-    │ 
-    ├── __init__.py         <- Makes src a Python module
-    │
-    ├── dataset.py          <- Scripts to download or generate data
-    │
-    ├── features.py         <- Code to create features for modeling
-    │
-    ├── modeling
-    │   │
-    │   ├── __init__.py
-    │   │
-    │   ├── predict.py      <- Code to run model inference with trained models
-    │   │
-    │   └── train.py        <- Code to train models
-    │
-    └── plots.py            <- Code to create visualisations
-
-
+1. **Clone the repository:**
+```bash
+git clone https://github.com/ShoreDataLab/MovieLens-RecSys
 ```
 
---------
+2. **Change to the project directory:**
+```bash
+cd MovieLens-RecSys
+```
 
+3. **Install required dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+## Scripts and Notebooks
+The repository includes a variety of scripts and notebooks for building and evaluating different recommendation algorithms:
+
+* **data_preprocessing.py:** Preprocesses the MovieLens dataset
+* **model_building.py:** Builds various recommendation models
+* **evaluation.py:** Evaluates the performance of different recommendation models
+* **notebooks/exploratory_data_analysis.ipynb:** Explores the MovieLens dataset
+* **notebooks/model_building.ipynb:** Builds and evaluates recommendation models
+
+## Evaluation
+The recommendation system's performance is evaluated using metrics like precision and recall.
+
+## Further Development
+This repository provides a foundation for building and evaluating movie recommendation systems. Consider the following for further development:
+
+* Experimenting with different recommendation algorithms
+* Tuning hyperparameters of recommendation models
+* Incorporating additional data sources
